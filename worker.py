@@ -61,7 +61,8 @@ def speech_to_text(audio_binary):
         print('Speech-to-Text response:', response)
         text = response.get('results').pop().get('alternatives').pop().get('transcript')
         print('recognised text: ', text)
-        return text
+    
+    return text
 
 
 def text_to_speech(text, voice=""):
